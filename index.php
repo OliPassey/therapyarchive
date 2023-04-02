@@ -129,8 +129,8 @@ $getID3 = new getID3;
             <p>Year: $year</p>
         </div>
         <audio controls src="$file"></audio>
-        <button class="download-btn" onclick="location.href='$file'">Download</button>
-        <span>0 downloads</span>
+        <a class="download-btn" href="$file" download>Download</a>
+
         HTML;
         
                 echo "<div class=\"recording\" $flier>
@@ -142,6 +142,7 @@ $getID3 = new getID3;
         } else {
             echo "<p>Error: the 'audio' directory does not exist.</p>";
         }
+        
         
         ?>
     </div>
